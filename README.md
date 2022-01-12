@@ -28,7 +28,7 @@
                     item_id : "55978", //{string} | id du produit
                     item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
                     currency : "EUR", // {string} | Code ISO de la devise affichée
-                    price : 160.54, // {number} | prix unqiue du produit
+                    price : 160.54, // {number} | prix unqiue du produit TTC
                     quantity : 1, // {number} | quantité
                     index : 1, // {number} | position du produit dans la liste
                     item_brand : "Khun", // {string} | marque du produit
@@ -100,6 +100,7 @@
             ecomm_pagetype : "product",
             ecomm_prodid : "55978",
             ecomm_totalvalue : 160.54, // {number} | prix unqiue du produit TTC
+             ecomm_totalvalue_tax_exc : 128.43, // {number} | prix unqiue du produit HT
             ecomm_category : "Pièce agricole Travail du sol"
         }
     });
@@ -170,7 +171,7 @@
     //Google Analytics data
     window.dataLayer.push({ ecommerce : null}); //Effacer les infos ecommerce précédentes
     window.dataLayer.push({
-        event : "remove_to_cart",
+        event : "remove_from_cart",
         ecommerce : {
             currency : "EUR",
             items : [ 
@@ -178,7 +179,7 @@
                     item_id : "55978", //{string} | id du produit
                     item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
                     currency : "EUR", // {string} | Code ISO de la devise affichée
-                    price : 160.54, // {number} | prix unqiue du produit
+                    price : 160.54, // {number} | prix unqiue du produit TTC
                     quantity : 1, // {number} | quantité du produit enlevé du panier
                     index : 0, // {number} | position du produit dans la liste = zéro par défaut 
                     item_brand : "Khun", // {string} | marque du produit
@@ -207,7 +208,8 @@
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64 // {number} | Montant total (produits x quantité) du panier TTC
+            ecomm_totalvalue : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
+            ecomm_totalvalue_tax_exc : 354.91 // {number} | Montant total (produits x quantité) du panier HT
         }
     });
     //Google Analytics data
@@ -267,7 +269,8 @@
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64
+            ecomm_totalvalue : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
+            ecomm_totalvalue_tax_exc : 354.91 // {number} | Montant total (produits x quantité) du panier HT
         }
     });
     //Google Analytics data
@@ -285,7 +288,7 @@
                     item_id : "55978", //{string} | id du produit
                     item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
                     currency : "EUR", // {string} | Code ISO de la devise affichée
-                    price : 160.54, // {number} | prix unqiue du produit
+                    price : 160.54, // {number} | prix unqiue du produit TTC
                     quantity : 1, // {number} | quantité
                     index : 1, // {number} | position du produit dans la liste
                     item_brand : "Khun", // {string} | marque du produit
@@ -327,7 +330,8 @@
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64 // {number} | Montant total (produits x quantité) du panier TTC
+            ecomm_totalvalue : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
+            ecomm_totalvalue_tax_exc : 354.91 // {number} | Montant total (produits x quantité) du panier HT
         }
     });
     //Google Analytics data
@@ -345,7 +349,7 @@
                     item_id : "55978", //{string} | id du produit
                     item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
                     currency : "EUR", // {string} | Code ISO de la devise affichée
-                    price : 160.54, // {number} | prix unqiue du produit
+                    price : 160.54, // {number} | prix unqiue du produit TTC
                     quantity : 1, // {number} | quantité
                     index : 1, // {number} | position du produit dans la liste
                     item_brand : "Khun", // {string} | marque du produit
@@ -387,7 +391,8 @@
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64 // {number} | Montant total (produits x quantité) du panier TTC
+            ecomm_totalvalue : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
+            ecomm_totalvalue_tax_exc : 354.91 // {number} | Montant total (produits x quantité) du panier HT
         }
     });
     //Google Analytics data
@@ -405,7 +410,7 @@
                     item_id : "55978", //{string} | id du produit
                     item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
                     currency : "EUR", // {string} | Code ISO de la devise affichée
-                    price : 160.54, // {number} | prix unqiue du produit
+                    price : 160.54, // {number} | prix unqiue du produit TTC
                     quantity : 1, // {number} | quantité
                     index : 1, // {number} | position du produit dans la liste
                     item_brand : "Khun", // {string} | marque du produit
@@ -447,7 +452,8 @@
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64
+            ecomm_totalvalue : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
+            ecomm_totalvalue_tax_exc : 354.91 // {number} | Montant total (produits x quantité) du panier HT
         }
     });
     //Google Analytics data
@@ -507,7 +513,8 @@
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64 // {number} | Montant total (produits x quantité) du panier TTC
+            ecomm_totalvalue : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
+            ecomm_totalvalue_tax_exc : 354.91 // {number} | Montant total (produits x quantité) du panier HT
         }
     });
     //Google Analytics data
