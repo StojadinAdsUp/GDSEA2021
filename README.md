@@ -73,7 +73,7 @@
                     item_id : "55978", //{string} | id du produit
                     item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
                     currency : "EUR", // {string} | Code ISO de la devise affichée
-                    price : 160.54, // {number} | prix unqiue du produit
+                    price : 160.54, // {number} | prix unqiue du produit TTC
                     quantity : 1, // {number} | quantité
                     index : 1, // {number} | position du produit dans la liste
                     item_brand : "Khun", // {string} | marque du produit
@@ -99,7 +99,7 @@
         google_tag_params : {
             ecomm_pagetype : "product",
             ecomm_prodid : "55978",
-            ecomm_totalvalue : 160.54, 
+            ecomm_totalvalue : 160.54, // {number} | prix unqiue du produit TTC
             ecomm_category : "Pièce agricole Travail du sol"
         }
     });
@@ -114,7 +114,7 @@
                     item_id : "55978", //{string} | id du produit
                     item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
                     currency : "EUR", // {string} | Code ISO de la devise affichée
-                    price : 160.54, // {number} | prix unqiue du produit
+                    price : 160.54, // {number} | prix unqiue du produit TTC
                     quantity : 1, // {number} | quantité
                     index : 0, // {number} | position du produit dans la liste = zéro par défaut 
                     item_brand : "Khun", // {string} | marque du produit
@@ -146,7 +146,7 @@
                     item_id : "55978", //{string} | id du produit
                     item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
                     currency : "EUR", // {string} | Code ISO de la devise affichée
-                    price : 160.54, // {number} | prix unqiue du produit
+                    price : 160.54, // {number} | prix unqiue du produit TTC
                     quantity : 1, // {number} | quantité du produit ajouté au panier
                     index : 0, // {number} | position du produit dans la liste  = zéro par défaut 
                     item_brand : "Khun", // {string} | marque du produit
@@ -207,7 +207,7 @@
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64
+            ecomm_totalvalue : 443.64 // {number} | Montant total (produits x quantité) du panier TTC
         }
     });
     //Google Analytics data
@@ -219,7 +219,7 @@
         },
         ecommerce : {
             currency : "EUR",
-            value : 443.64, // {number} | Montant total (produits x quantité) du panier
+            value : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
             items : [ 
                 {
                     item_id : "55978", //{string} | id du produit
@@ -279,7 +279,7 @@
         },
         ecommerce : {
             currency : "EUR",
-            value : 443.64, // {number} | Montant total (produits x quantité) du panier
+            value : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
             items : [ 
                 {
                     item_id : "55978", //{string} | id du produit
@@ -327,7 +327,7 @@
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64
+            ecomm_totalvalue : 443.64 // {number} | Montant total (produits x quantité) du panier TTC
         }
     });
     //Google Analytics data
@@ -339,7 +339,7 @@
         },
         ecommerce : {
             currency : "EUR",
-            value : 443.64, // {number} | Montant total (produits x quantité) du panier
+            value : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
             items : [ 
                 {
                     item_id : "55978", //{string} | id du produit
@@ -387,7 +387,7 @@
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64
+            ecomm_totalvalue : 443.64 // {number} | Montant total (produits x quantité) du panier TTC
         }
     });
     //Google Analytics data
@@ -399,7 +399,7 @@
         },
         ecommerce : {
             currency : "EUR",
-            value : 443.64, // {number} | Montant total (produits x quantité) du panier
+            value : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
             items : [ 
                 {
                     item_id : "55978", //{string} | id du produit
@@ -459,13 +459,13 @@
         },
         ecommerce : {
             currency : "EUR",
-            value : 443.64, // {number} | Montant total (produits x quantité) du panier
+            value : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
             items : [ 
                 {
                     item_id : "55978", //{string} | id du produit
                     item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
                     currency : "EUR", // {string} | Code ISO de la devise affichée
-                    price : 160.54, // {number} | prix unqiue du produit
+                    price : 160.54, // {number} | prix unqiue du produit TTC
                     quantity : 1, // {number} | quantité
                     index : 1, // {number} | position du produit dans la liste
                     item_brand : "Khun", // {string} | marque du produit
@@ -502,24 +502,24 @@
     //Googe Ads data
     window.dataLayer.push({
         google_tag_params : {
-            ecomm_pagetype : "checkout",
+            ecomm_pagetype : "purchase",
             ecomm_prodid : [
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64
+            ecomm_totalvalue : 443.64 // {number} | Montant total (produits x quantité) du panier TTC
         }
     });
     //Google Analytics data
     window.dataLayer.push({ ecommerce : null}); //Effacer les infos ecommerce précédentes
     window.dataLayer.push({
-        event : "add_payment_info",
+        event : "purchase",
         action_field : {
 
         },
         ecommerce : {
             currency : "EUR",
-            value : 443.64, // {number} | Montant total (produits x quantité) du panier
+            value : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
             transaction_id : "T1234", // {string} | ID de la transaction sur la BDD
             first_purchase : true, // {boolean} | première transaction
             payment_method : "Credit Card", //{string} | Méthode de paiement choisie par l'utilisateur
@@ -528,7 +528,7 @@
                     item_id : "55978", //{string} | id du produit
                     item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
                     currency : "EUR", // {string} | Code ISO de la devise affichée
-                    price : 160.54, // {number} | prix unqiue du produit
+                    price : 160.54, // {number} | prix unqiue du produit TTC
                     quantity : 1, // {number} | quantité
                     index : 1, // {number} | position du produit dans la liste
                     item_brand : "Khun", // {string} | marque du produit

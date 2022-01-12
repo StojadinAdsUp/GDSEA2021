@@ -3,24 +3,24 @@
     //Googe Ads data
     window.dataLayer.push({
         google_tag_params : {
-            ecomm_pagetype : "checkout",
+            ecomm_pagetype : "purchase",
             ecomm_prodid : [
                 "55978",
                 "55995"
             ],
-            ecomm_totalvalue : 443.64
+            ecomm_totalvalue : 443.64 // {number} | Montant total (produits x quantité) du panier TTC
         }
     });
     //Google Analytics data
     window.dataLayer.push({ ecommerce : null}); //Effacer les infos ecommerce précédentes
     window.dataLayer.push({
-        event : "add_payment_info",
+        event : "purchase",
         action_field : {
 
         },
         ecommerce : {
             currency : "EUR",
-            value : 443.64, // {number} | Montant total (produits x quantité) du panier
+            value : 443.64, // {number} | Montant total (produits x quantité) du panier TTC
             transaction_id : "T1234", // {string} | ID de la transaction sur la BDD
             first_purchase : true, // {boolean} | première transaction
             payment_method : "Credit Card", //{string} | Méthode de paiement choisie par l'utilisateur
