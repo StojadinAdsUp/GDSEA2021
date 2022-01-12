@@ -1,0 +1,48 @@
+<script>
+    window.dataLayer = window.dataLayer || [];
+    //Googe Ads data
+    window.dataLayer.push({
+        google_tag_params : {
+            ecomm_pagetype : "category",
+            ecomm_category : "Pice agricole Travail du sol"
+        }
+    });
+    //Google Analytics data
+    window.dataLayer.push({ ecommerce : null}); //Effacer les infos ecommerce précédentes
+    window.dataLayer.push({
+        event : "view_item_list",
+        action_field : {
+
+        },
+        ecommerce : {
+            currency : "EUR",
+            items : [ 
+                {
+                    item_id : "55978", //{string} | id du produit
+                    item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
+                    currency : "EUR", // {string} | Code ISO de la devise affichée
+                    price : 160.54, // {number} | prix unqiue du produit
+                    quantity : 1, // {number} | quantité
+                    index : 1, // {number} | position du produit dans la liste
+                    item_brand : "Khun", // {string} | marque du produit
+                    item_category : "Pièce agricole Travail du sol", // {string} |
+                    item_category2 : "Pièce de Charrue", // {string} |
+                    item_category3 : "Sac de charrue" // {string} |
+                }, {
+                    item_id : "55995", 
+                    item_name : "Piece agricole Travail du sol", 
+                    currency : "EUR", 
+                    price : 141.55, 
+                    quantity : 1, 
+                    index : 2, 
+                    item_brand : "Kverneland", 
+                    item_category : "Pièce agricole Travail du sol", 
+                    item_category2 : "Pièce de Charrue", 
+                    item_category3 : "Sac de charrue" 
+                }, {
+                    // Suite des produits 
+                }
+            ]
+        }
+    });
+</script>

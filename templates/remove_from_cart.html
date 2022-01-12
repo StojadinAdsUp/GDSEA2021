@@ -1,0 +1,25 @@
+<script>
+    window.dataLayer = window.dataLayer || [];
+    //Google Analytics data
+    window.dataLayer.push({ ecommerce : null}); //Effacer les infos ecommerce précédentes
+    window.dataLayer.push({
+        event : "remove_to_cart",
+        ecommerce : {
+            currency : "EUR",
+            items : [ 
+                {
+                    item_id : "55978", //{string} | id du produit
+                    item_name : "Soc charrue Kuhn - Gauche - Carbure", // {string} | Nom du produit
+                    currency : "EUR", // {string} | Code ISO de la devise affichée
+                    price : 160.54, // {number} | prix unqiue du produit
+                    quantity : 1, // {number} | quantité du produit enlevé du panier
+                    index : 0, // {number} | position du produit dans la liste = zéro par défaut 
+                    item_brand : "Khun", // {string} | marque du produit
+                    item_category : "Pièce agricole Travail du sol", // {string} |
+                    item_category2 : "Pièce de Charrue", // {string} |
+                    item_category3 : "Sac de charrue" // {string} |
+                }
+            ]
+        }
+    });
+</script>
